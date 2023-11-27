@@ -51,7 +51,7 @@ body {
             text-align: center;
             text-decoration: none;
             color: black;
-            border-color:#7fe4f6 
+            border: 2px solid light blue;
         }
 
         .larger {
