@@ -58,9 +58,8 @@ body {
         }
 
         .work-item img {
-            width: 100%;
-            height: auto;
             display: block;
+            flex-basis: 100%;
         }
 
         aside {
@@ -68,7 +67,7 @@ body {
             padding: 20px;
             position: relative;
             text-align:centre;
-            background-color: #1bb3a1;
+            background-color: #055249;
             color: white;
             width:100%;
         }
