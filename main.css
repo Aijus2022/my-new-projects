@@ -59,8 +59,11 @@ body {
         }
 
         .work-item img {
+            width:200px;
+            hight:200px;        
             display: block;
-            flex-basis: 100%;
+            border color:#096b35;
+            
         }
 
         aside {
