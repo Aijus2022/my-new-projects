@@ -38,44 +38,47 @@ body {
             justify-content: space-around;
             padding: 20px;
         }
-
-        .work-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .work-item {
-            width: 50%;
-            margin-bottom: 20px;
-            text-align: center;
-            text-decoration: none;
-            color: black;
-            border: 2px solid light blue;
-        }
-
-        .larger {
-            width: 100%; /* Make the first image take up the whole row */
-        }
-
-        .work-item img {
-            width:200px;
-            hight:200px;        
-            display: block;
-            border color:#096b35;
-            
-        }
-
-        aside {
-            flex: 1;
-            padding: 20px;
-            position: relative;
-            text-align:centre;
-            background-color: #1474c4;
-            color: white;
-            width:100%;
-        }
-
+       sidebar {#sidebar {
+     margin-left: 2.5rem;
+     margin-right: 2.5rem;
+     width: 100px;
+}
+       .flexbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .grid .item-1 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+    }
+    .grid .item-2 {
+        grid-column: 2 / span 5;
+        grid-row: 1 / span 1;
+    }
+    .grid .item-3 {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 1;
+    }
+    .grid .item-4 {
+        grid-column: 3 / span 2;
+        grid-row: 2 / span 1;
+    }
+    .grid .item-5 {
+        grid-column: 4 / span 1;
+        grid-row: 2 / span 1;
+    }
+</style>
+      
         footer {
             background-color: #184D47;
             color: white;
