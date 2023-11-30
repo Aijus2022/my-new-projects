@@ -109,6 +109,7 @@ body {
     display: block;
     border-color: rgb(220, 255, 115);
 	margin:5px;
+	aspect-ratio:3/4;
 }
 
         footer {
