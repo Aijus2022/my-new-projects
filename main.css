@@ -39,7 +39,8 @@ body {
 
         .wrapper {
             display: flex;
-		background-color:#7fe4f6 }
+		background-color:rgba:234,23,35,0.2};
+		margin:auto);
 		
      .sidebar {	
     flex: 0 0 200px; /* Flex basis set to a fixed width of 200px */
@@ -54,23 +55,24 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-	padding: 20px;
+	padding: 10px;
+	 margin:auto;
 }
 
 .work-item {
-    width: 48%;
+    width: 38%;
     box-sizing: border-box; 
     margin-bottom: 20px;
     text-align: center;
-    text-decoration: none;
-    color: black;
-	border: background-color #096b35;
+    text-decoration:none ;
+    color: white;
+    border: background-color rgba(234,34.123,0.3);
     border:size 10px;	 
 }
 
 .larger {
-    width: 100%;
-	max-width:1000px;
+    width: 80%;
+	max-width:80vw;
 	border: background-color rgba:(232,89,57,0.3);
     border:size 10px;	
 }
