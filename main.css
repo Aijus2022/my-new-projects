@@ -1,6 +1,4 @@
-
-          
-    body {
+body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -25,7 +23,7 @@
 
         nav {
             margin-top: 20px;
-
+			 
         }
 
         nav a {
@@ -37,7 +35,7 @@
         .wrapper {
             display: flex;
 		background-color:#7fe4f6 }
-
+		
      .sidebar {	
     flex: 0 0 200px; /* Flex basis set to a fixed width of 200px */
     padding: 20px;
