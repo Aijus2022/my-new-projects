@@ -6,12 +6,33 @@ body {
   background-size: cover; /* This property ensures that the background image covers the entire body */
 }
 
-         h1,h2,h3,p { font-family: Arial, sans-serif;
+       @media screen and (min-width: 600px) {
+//For Tablets
+    body {
+        width: 100;
+    }
+}
+
+@media screen and (min-width: 768px) {
+//For Laptops
+    .body {
+        width: 738px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+//For Large Laptops
+    .body {
+        width: 962px;
+    }
+}
+  h1,h2,h3,p { font-family: Arial, sans-serif;
 		     color:white;
+   
         }
 
         header {
-            background-color:#184D47;
+            background-color:rgba(345,45,123,0.2);
             color: white;
             padding: 20px;            
         }
@@ -29,8 +50,11 @@ body {
 
         nav {
             margin-top: 20px;
+	 text-decoration-line: underline;
+  text-decoration-color: rgba(345,05,106,0.7);   	
 			 
         }
+
 
         nav a {
             margin-right:20px;
@@ -87,7 +111,7 @@ body {
 }
 
         footer {
-            background-color: #184D47;
+            background-color: rgba(234,345,123,0.3);
             color: white;
             text-align: center;
             padding: 10px;
