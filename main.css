@@ -2,7 +2,7 @@ body {
   width: 100%; /* Set the width to 100% of the viewport */
   padding: 20px; 
   box-sizing: border-box; /* Include padding and border in the total width and height */
-  background: url('path/to/your/image.jpg') no-repeat center center fixed;
+  background: url('images/green-forest.jpg') no-repeat center center fixed;
   background-size: cover; /* This property ensures that the background image covers the entire body */
 }
 
