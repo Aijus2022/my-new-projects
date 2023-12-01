@@ -91,7 +91,7 @@ body {
 }
 .work-item {
  position: relative;
-  max-width: 48%;
+  width: 48%;
   box-sizing: border-box;
   margin:5px;
   text-align: center;
