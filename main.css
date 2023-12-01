@@ -81,17 +81,17 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
 	padding: 10px;
-	 margin:20px;
+	 margin:10px;
 }
 .larger {
    	max-width:100%;
-	border: background-color rgba:(232,89,57,0.3);
-    border:size 10px;	
+	border: background-color rgba:(232,89,57,0.8);	
+        border:size 10px;	
 	margin:10px;
 }
 .work-item {
  position: relative;
-  width: 48%;
+  max-width: 100%;
   box-sizing: border-box;
   margin:5px;
   text-align: center;
