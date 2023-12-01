@@ -69,8 +69,7 @@ body {
 		
      .sidebar {	
     flex: 0 0 200px; /* Flex basis set to a fixed width of 200px */
-    padding: 20px;
-	background-color:#ff69b440
+   background-color:#ff69b440
 ;	
     color: white;
     height: 100 vh;
@@ -81,9 +80,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-	padding: 10px;
-	 margin:10px;
-}
+    }
 .larger {
    	max-width:100%;
 	border: background-color rgba:(232,89,57,0.8);	
@@ -92,9 +89,9 @@ body {
 }
 .work-item {
  position: relative;
-  max-width: 100%;
+  max-width: 48%;
   box-sizing: border-box;
-  margin:5px;
+  margin:2px;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -117,7 +114,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px; /* Adjust padding based on your preference */
   background: linear-gradient(rgba(123, 23, 123, 0.5), rgba(0, 0, 0, 0.5)); /* Adjusts gradient colors and opacity */
   border-radius: 10px; /* Matches the border-radius with the image */
   box-sizing: border-box;
