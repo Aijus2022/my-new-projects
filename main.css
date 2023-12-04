@@ -62,60 +62,77 @@ body {
         }
 
        .wrapper {
-        display: flex;
-		background-color:rgba(234,23,35,0.2);
-		margin:auto}
-
-	
-  .sidebar {	
-   flex: 0 0 200px; /* Flex basis set to a fixed width of 200px */
-   background-color:#ff69b440;
-
-    color: white;
-    height: 100 vh;
+  display: flex;
+  background-color: rgba(234, 23, 35, 0.2);
+  margin: auto;
+  position: relative; /* Ensure relative positioning for absolute positioning within */
 }
 
-  .work-container {
-    max-width:80%; /* Width of the container minus the width of the sidebar */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    }
+.sidebar {
+  flex: 0 0 200px;
+  background-color: #ff69b440;
+  color: white;
+  height: 100vh;
+  position: relative; /* Relative positioning for absolute positioning within */
+}
+
+/* Text overlay styles */
+.text-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.work-container {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .larger {
-   max-width:100%;	
-    border:5px solid rgba(232,89,57,0.8);
-    border-radius: 10px;	
-    margin:10px;
-    overflow:hidden;
+  width: 100%;
+  border: 5px solid rgba(232, 89, 57, 0.8);
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative; /* Relative positioning for absolute positioning within */
 }
+
+/* Text overlay styles for larger */
+.larger .text-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .work-item {
- position: relative;
+  position: relative;
   max-width: 48%;
   box-sizing: border-box;
-  margin:2px;
+  margin: 2px;
   text-align: center;
   text-decoration: none;
   color: white;
-  overflow: hidden; /* Ensures the text doesn't overflow the border */
+  overflow: hidden;
 }
 
-.work-item img {
-  display: block;
-  width: 100%;
-  height:70%;
-  border-radius: 10px; /* Adjusts the border-radius */
-}
-	
-
+/* Text overlay styles for work-item */
 .work-item .text-overlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+;
   background: linear-gradient(rgba(123, 23, 123, 0.5), rgba(0, 0, 0, 0.5)); /* Adjusts gradient colors and opacity */
   border-radius: 10px; /* Matches the border-radius with the image */
   box-sizing: border-box;
