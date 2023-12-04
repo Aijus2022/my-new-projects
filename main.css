@@ -65,6 +65,7 @@ body {
         display: flex;
 		background-color:rgba(234,23,35,0.2);
 		margin:auto}
+
 width:100%;
 		
   .sidebar {	
@@ -82,7 +83,7 @@ width:100%;
     justify-content: space-around;
     }
 .larger {
-   	max-width:100%;	
+   	max-width:800%;	
     border:5px solid rgba(232,89,57,0.8);
     border-radius: 10px;	
     margin:10px;
