@@ -76,67 +76,65 @@ body {
   position: relative; /* Relative positioning for absolute positioning within */
 }
 
-/* Text overlay styles */
-.text-overlay {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-}
+.grid-container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+      gap: 20px; /* Adjust grid gap */
+      margin: 20px; /* Adjust overall margin */
+    }
 
-.work-container {
-  max-width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+    .hero-container {
+      grid-column: 1 / span 12; /* Hero container spans 12 columns */
+      display: grid;
+      grid-template-rows: auto 1fr; /* Two rows, auto for text and 1fr for image */
+      gap: 20px; /* Adjust gap between text and image */
+    }
 
-.larger {
-  width: 100%;
-  border: 5px solid rgba(232, 89, 57, 0.8);
-  border-radius: 10px;
-  margin: 10px;
-  overflow: hidden;
-  position: relative; /* Relative positioning for absolute positioning within */
-}
+    .hero-text {
+      grid-row: 1; /* Text is in the first row of the hero container */
+      margin: 20px; /* Adjust margin for text */
+      padding: 20px; /* Adjust padding for text */
+      border: 2px solid #000; /* Adjust border properties */
+    }
 
-/* Text overlay styles for larger */
-.larger .text-overlay {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-}
+    .hero-image {
+      grid-row: 2; /* Image is in the second row of the hero container */
+      overflow: hidden;
+    }
 
-.work-item {
-  position: relative;
-  max-width: 48%;
-  box-sizing: border-box;
-  margin: 2px;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  overflow: hidden;
-}
+    .grid-item {
+	grid-column: 1 / span 12;
+      position: relative;
+      overflow: hidden;
+      display: flex; /* Use flex for easier alignment */
+    }
 
-/* Text overlay styles for work-item */
-.work-item .text-overlay {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-}
-;
-  background: linear-gradient(rgba(123, 23, 123, 0.5), rgba(0, 0, 0, 0.5)); /* Adjusts gradient colors and opacity */
-  border-radius: 10px; /* Matches the border-radius with the image */
-  box-sizing: border-box;
-}
+    .grid-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-container {
+      flex: 6; /* Each image container takes 6 columns */
+    }
+
+    .text-container {
+      flex: 6; /* Each text container takes 6 columns */
+    }
+
+    .desc-text {
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 80%); /* Adjust gradient and transparency */
+    }
+
+    .desc-text h2 {
+      margin: 0;
+      color: #29,23,67,06; /* Adjust text color */
+    }
 
         footer {
             background-color: rgba(234,345,123,0.3);
