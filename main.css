@@ -66,8 +66,7 @@ body {
 		background-color:rgba(234,23,35,0.2);
 		margin:auto}
 
-width:100%;
-		
+	
   .sidebar {	
    flex: 0 0 200px; /* Flex basis set to a fixed width of 200px */
    background-color:#ff69b440;
@@ -77,13 +76,13 @@ width:100%;
 }
 
   .work-container {
-    width:80%; /* Width of the container minus the width of the sidebar */
+    max-width:80%; /* Width of the container minus the width of the sidebar */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     }
 .larger {
-   	max-width:800%;	
+   max-width:100%;	
     border:5px solid rgba(232,89,57,0.8);
     border-radius: 10px;	
     margin:10px;
