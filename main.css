@@ -69,13 +69,13 @@ body {
 }
 
 .sidebar {
-  flex: 0 0 200px;
-  background-color: rgba(88,14,120,04);
-  color: white;
-  height: 100%;
-  position: relative; /* Relative positioning for absolute positioning within */
+    background-color: linear-gradient(to bottom, rgba(155, 15, 155, 0.3), rgba(25, 25, 255, 0.9) 80%);
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 0; /* Ensure no bottom margin */
+    flex: 0 0 200px; 
+    position:relative;	
 }
-
 .grid-container {
       display: grid;
       grid-template-columns: repeat(12, 1fr); /* 12-column grid */
