@@ -70,9 +70,9 @@ body {
 
 .sidebar {
   flex: 0 0 200px;
-  background-color: rgba(120,14,220,04);
+  background-color: rgba(88,14,120,04);
   color: white;
-  height: 100vh;
+  height: 100%;
   position: relative; /* Relative positioning for absolute positioning within */
 }
 
@@ -136,7 +136,7 @@ body {
     color: #292367; 
 }
 
-.desc-text p {
+.p {
     margin: 10px 0; /*for better spacing */
     color: rgba (22,34,345,0.8); /* text color */
     font-size: 16px; 
