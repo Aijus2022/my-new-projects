@@ -70,7 +70,7 @@ body {
 
 .sidebar {
   flex: 0 0 200px;
-  background-color: rgba(123,14,193,05);
+  background-color: rgba(120,14,220,04);
   color: white;
   height: 100vh;
   position: relative; /* Relative positioning for absolute positioning within */
@@ -127,7 +127,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, rgba(155, 15, 155, 0.5), rgba(25, 25, 255, 0.9) 80%);
+    background: linear-gradient(to bottom, rgba(155, 15, 155, 0.3), rgba(25, 25, 255, 0.9) 80%);
     padding: 20px; /* padding for better spacing */
 }
 
