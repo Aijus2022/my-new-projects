@@ -65,51 +65,7 @@ body {
     flex: 0 0 200px; 
     position:relative;	
 }
-.grid-container {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr); /* 12-column grid */
-      gap: 20px; /* Adjust grid gap */
-      margin: 20px; /* Adjust overall margin */
-    }
 
-    .hero-container {
-      grid-column: 1 / span 12; /* Hero container spans 12 columns */
-      display: grid;
-      grid-template-rows: auto 1fr; /* Two rows, auto for text and 1fr for image */
-      gap: 20px; /* Adjust gap between text and image */
-    }
-
-    .hero-text {
-      grid-row: 1; /* Text is in the first row of the hero container */
-      margin: 20px; /* Adjust margin for text */
-      padding: 20px; /* Adjust padding for text */
-      border: 2px solid #000; /* Adjust border properties */
-    }
-
-    .hero-image {
-      grid-row: 2; /* Image is in the second row of the hero container */
-      overflow: hidden;
-    }
-
-    .grid-item {
-	grid-column: 1 / span 12;
-      position: relative;
-      overflow: hidden;
-      display: flex; /* Use flex for easier alignment */
-    }
-
-    .grid-item img {
-      width: 100%;
-      height: auto;
-    }
-
-    .image-container {
-      flex: 6; /* Each image container takes 6 columns */
-    }
-
-    .text-container {
-      flex: 6; /* Each text container takes 6 columns */
-    }
       
      .desc-text {
     display: flex;
