@@ -5,26 +5,7 @@ body {
   background-size: cover; /* This property ensures that the background image covers the entire body */
 }
 
-    @media screen and (min-width: 600px) {
-  /* For Tablets */
-  body {
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-//For Laptops
-    body {
-        width: 738px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-//For Large Laptops
-    body {
-        width: 962px;
-    }
-}
+ 
   h1,h2,h3,h4,p { font-family: Arial, sans-serif;
 		     color:white;
    
