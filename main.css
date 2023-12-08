@@ -99,19 +99,20 @@ body {
     }
 
     .hero-text {
-      grid-row: 1; /* Text is in the first row of the hero container */
+      grid-row: auto; 
       margin: 20px; /* Adjust margin for text */
       padding: 20px; /* Adjust padding for text */
-      border: 2px solid #000; /* Adjust border properties */
+      border: 2px solid #000; /* Adjust border prwidthperties */ 
+      width:100%;/* Takes 100% of parent container width */ 
     }
 
     .hero-image {
-      grid-row: 2; /* Image is in the second row of the hero container */
+      grid-row: 1fr; /* Image is in the second row of the hero container */
       overflow: hidden;
     }
 
     .grid-item {
-	grid-column: 1 / span 12;
+      grid-column: 1 / span 12;
       position: relative;
       overflow: hidden;
       display: flex; /* Use flex for easier alignment */
