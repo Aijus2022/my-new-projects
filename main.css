@@ -1,164 +1,160 @@
 body {
-  width: 100%; /* Sets the width to 100% of the viewport */
-  box-sizing: border-box; /* Include padding and border in the total width and height */
+  width: 100%;
+  box-sizing: border-box;
   background: url('images/luca-bravo-a_hPPrncGlQ-unsplash.jpg') no-repeat center center fixed;
-  background-size: cover; /* This property ensures that the background image covers the entire body */
+  background-size: cover;
 }
 
-    @media screen and (min-width: 600px) {
-  /* For Tablets */
+@media screen and (max-width: 600px) {
+  /* For Small Devices (Mobile Phones) */
   body {
     max-width: 100%;
   }
 }
 
-@media screen and (min-width: 768px) {
-//For Laptops
-    body {
-        width: 738px;
-    }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  /* For Medium Devices (iPads) */
+  body {
+    width: 738px;
+  }
 }
 
-@media screen and (min-width: 992px) {
-//For Large Laptops
-    body {
-        width: 962px;
-    }
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /* For Large Devices (Laptops) */
+  body {
+    width: 962px;
+  }
 }
-  h1,h2,h3,h4,p { font-family: Arial, sans-serif;
-		     color:white;
-   
-        }
 
-        header {
-            background-color:rgba(345,45,123,0.2);
-            color: white;
-            padding: 20px;            
-        }
+h1, h2, h3, h4, p {
+  font-family: Arial, sans-serif;
+  color: white;
+}
 
-        .avatar {
-            width: 100px; 
-            border-radius: 50%;
-			margin-left:0 px;
-        }
+header {
+  background-color: rgba(345, 45, 123, 0.2);
+  color: white;
+  padding: 20px;
+}
 
-        .header-content {
-            margin-top: 20px;
-			text-align:center;
-        }
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 0px;
+}
 
-        nav {
-            margin-top: 20px;
-	 text-decoration-line: underline;
-  text-decoration-color: rgba(345,105,306,0.5);   	
-			 
-        }
+.header-content {
+  margin-top: 20px;
+  text-align: center;
+}
 
+nav {
+  margin-top: 20px;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(345, 105, 306, 0.5);
+}
 
-        nav a {
-            margin-right:20px;
-            color: white;
-            text-decoration: none;
-        }
+nav a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+}
 
-       .wrapper {
+.wrapper {
   display: flex;
   background-color: rgba(234, 23, 35, 0.2);
   margin: auto;
-  position: relative; 
+  position: relative;
+}
 
 .sidebar {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 80%);
-   
 }
 
 .sidebar a {
-    color: #3498db; /* contrasting color */
-    text-decoration: none;
-    transition: color 0.3s ease-in-out; /* smooth color transition on hover */
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  padding: 20px;
+  margin-bottom: 0;
+  flex: 0 0 200px;
+  position: relative;
+}
 
-    /* Additional styles for better visibility */
-}
-    padding: 20px;
-    margin-bottom: 0; /* Ensure no bottom margin */
-    flex: 0 0 200px; 
-    position:relative;	
-}
 .grid-container {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr); /* 12-column grid */
-      gap: 20px; /* Adjust grid gap */
-      margin: 20px; /* Adjust overall margin */
-    }
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
 
-    .hero-container {
-      grid-column: 1 / span 12; /* Hero container spans 12 columns */
-      display: grid;
-      grid-template-rows: auto 1fr; /* Two rows, auto for text and 1fr for image */
-      gap: 20px; /* Adjust gap between text and image */
-    }
+.hero-container {
+  grid-column: 1 / span 12;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
 
-    .hero-text {
-      grid-row: auto; 
-      margin: 20px; /* Adjust margin for text */
-      padding: 20px; /* Adjust padding for text */
-      border: 2px solid #000; /* Adjust border prwidthperties */ 
-      width:100%;/* Takes 100% of parent container width */ 
-    }
+.hero-text {
+  grid-row: auto;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #000;
+  width: 100%;
+}
 
-    .hero-image {
-      grid-row: 1fr; /* Image is in the second row of the hero container */
-      overflow: hidden;
-    }
+.hero-image {
+  grid-row: 1fr;
+  overflow: hidden;
+}
 
-    .grid-item {
-      grid-column: 1 / span 12;
-      position: relative;
-      overflow: hidden;
-      display: flex; /* Use flex for easier alignment */
-    }
+.grid-item {
+  grid-column: 1 / span 12;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
 
-    .grid-item img {
-      width: 100%;
-      height: auto;
-    }
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
 
-    .image-container {
-      flex: 6; /* Each image container takes 6 columns */
-    }
+.image-container {
+  flex: 6;
+}
 
-    .text-container {
-      flex: 6; /* Each text container takes 6 columns */
-    }
-      
-     .desc-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, rgba(155, 15, 155, 0.3), rgba(25, 25, 255, 0.9) 80%);
-    padding: 20px; /* padding for better spacing */
+.text-container {
+  flex: 6;
+}
+
+.desc-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(155, 15, 155, 0.3), rgba(25, 25, 255, 0.9) 80%);
+  padding: 20px;
 }
 
 .desc-text h2 {
-    margin: 0;
-    color: #292367; 
+  margin: 0;
+  color: #292367;
 }
 
 .p {
-    margin: 10px 0; /*for better spacing */
-    color: rgba (22,34,345,0.8); /* text color */
-    font-size: 16px; 
-    text-align: center; /* Center-align the text */
+  margin: 10px 0;
+  color: rgba(22, 34, 345, 0.8);
+  font-size: 16px;
+  text-align: center;
 }
 
-
-        footer {
-            background-color: rgba(234,345,123,0.3);
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom:0;
-            width:100%;
-        }
+footer {
+  background-color: rgba(234, 345, 123, 0.3);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
