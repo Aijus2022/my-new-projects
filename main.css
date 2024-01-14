@@ -1,70 +1,15 @@
-body {
-  margin: 0;
-  width: 100%;
-  box-sizing: border-box;
-  background: url('images/luca-bravo-a_hPPrncGlQ-unsplash.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
-
-header {
-  background-color: rgba(345, 45, 123, 0.2);
-  color: white;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-.avatar {
-  width: 100px;
-  border-radius: 50%;
-}
-
-.header-content {
-  margin-top: 20px;
-}
-
-nav {
-  margin-top: 20px;
-  text-decoration-line: underline;
-  text-decoration-color: rgba(345, 105, 306, 0.5);
-}
-
-nav a {
-  margin-right: 20px;
-  color: white;
-  text-decoration: none;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(234, 23, 35, 0.2);
-  margin: auto;
-  position: relative;
-}
-
-.sidebar {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 80%);
-  padding: 20px;
-  width: 100%;
-}
-
-.sidebar a {
-  color: #3498db;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-  padding: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.content {
-  padding: 20px;
-  width: 100%;
-}
-
 /* Media query for small devices */
 @media screen and (max-width: 767px) {
+  body {
+    width: 100%; /* Set body width to 100% */
+    max-width: none; /* Remove max-width constraint */
+  }
+
+  .wrapper {
+    display: block; /* Change to block to make it a single column */
+  }
+
+  .sidebar,
   .grid-container,
   .hero-container,
   .grid-item,
@@ -72,10 +17,23 @@ nav a {
   .hero-image,
   .image-container,
   .text-container,
-  .sidebar,
   .content,
-  .hero-text {
-    width: 100%;
-    flex: 1; /* Corrected rule to ensure each element takes full width */
+  .hero-text,
+  .card,
+  .card-text,
+  .card-body {
+    width: 100%; /* Set width to 100% for these elements */
+    flex: 1; /* Ensure each element takes full width */
+  }
+
+  .jumbotron img {
+    max-width: 100%; /* Adjust image width to 100% */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  header,
+  footer {
+    width: 100%; /* Set header and footer width to 100% */
+    max-width: none; /* Remove max-width constraint */
   }
 }
