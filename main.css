@@ -196,3 +196,82 @@ header {
             padding: 10px;
             box-sizing: border-box;
         }
+/* Your existing styles here */
+
+/* Add the following media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* Adjust font size for better readability on small screens */
+  }
+
+  header {
+    grid-template-columns: 1fr; /* Make header a single column */
+    text-align: center;
+    grid-column: span 12;
+    margin-left: 0;
+  }
+
+  .header-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header-navbar {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  aside {
+    grid-column: span 12; /* Make aside a single column */
+    margin-top: 10px; /* Adjust spacing */
+  }
+
+  main {
+    grid-column: span 12; /* Make main a single column */
+    margin: 10px; /* Adjust spacing */
+  }
+
+  .project-cell {
+    width: 100%; /* Set width to 100% for a full-width column */
+  }
+
+  hero {
+    grid-column: span 12; /* Make hero a single column */
+    margin: 10px; /* Adjust spacing */
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-mask-image: none; /* Remove mask for smaller screens */
+    mask-image: none;
+  }
+
+  .border-img {
+    display: flex;
+    flex-direction: column; /* Stack images in a single column */
+  }
+
+  .project-cell {
+    width: 100%; /* Set width to 100% for a full-width column */
+  }
+
+  .image-card {
+    max-width: 100%; /* Adjust image width for full-width */
+  }
+
+  .text-card {
+    width: 100%; /* Set width to 100% for a full-width text card */
+    max-height: none; /* Remove max height for text card */
+  }
+}
+
