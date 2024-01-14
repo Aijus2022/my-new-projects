@@ -68,19 +68,14 @@ nav a {
   .grid-container,
   .hero-container,
   .grid-item,
-  .desc-text {
-    width: 100%;
-  }
-
+  .desc-text,
   .hero-image,
   .image-container,
-  .text-container {
-    flex: 12;
-  }
-
+  .text-container,
   .sidebar,
   .content,
   .hero-text {
     width: 100%;
+    flex: 1; /* Corrected rule to ensure each element takes full width */
   }
 }
