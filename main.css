@@ -1,3 +1,300 @@
+ body {
+  width: 100%; /* Sets the width to 100% of the viewport */
+  box-sizing: border-box; /* Include padding and border in the total width and height */
+  background: url('images/luca-bravo-a_hPPrncGlQ-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover; /* This property ensures that the background image covers the entire body */
+}
+
+    @media screen and (min-width: 600px) {
+  /* For Tablets */
+  body {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+//For Laptops
+    body {
+        width: 738px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+//For Large Laptops
+    body {
+        width: 962px;
+    }
+}/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .jumbotron img {
+    width: auto; /* Allows the image to be its natural size */
+    height: 100%; /* Takes full height on smaller screens */
+  }
+}
+	  
+  h2,h3,h4,{ font-family: Arial, sans-serif;
+		     color:white;
+   p{color:rgb(31, 81, 255)
+        }
+
+      .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 182, 193, 0.1); /* Pinkish-blue color with opacity (adjust as needed) */
+      z-index: 2; /* Place overlay above other elements */
+      pointer-events: none; /* Allow interaction with underlying elements */
+    }
+
+    header, footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      position: relative; /* Ensure header and footer are on top of the overlay */
+      z-index: 2; /* Place header and footer above the overlay */
+    }
+
+    .header-content {
+      display: flex;
+      align-items: bottom;
+    }
+
+    .profile-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 1em;
+    }
+
+    .bio {
+      max-width: 400px; /* Adjust based on your content */
+	margin-left:1rem;
+	padding-left:1rem;}
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 0.5em;
+    }
+	    
+	.header-text { 	      
+  background-image: linear-gradient(to right, #00b140, #bcda00 17%, #bcda00 60%, #00b140);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+	}
+
+        nav {
+       	padding-left:50px;
+	padding-right:0px;
+       text-decoration-line: underline;
+       text-decoration-color: rgba(345,105,306,0.5);   	
+			 
+        }
+
+
+        nav a {
+            margin-right:5px;
+            color: white;
+            text-decoration: none;
+        }
+	  
+.row flex-grow-1    {margin-top:30px;
+		     width:100%;
+		     height:100%;
+		     overflow:hidden;}
+
+ .sidebar {
+  background-color: transparent;
+}
+.social-icons {
+  display: flex; /* Make the social icons horizontal */
+  margin-top: 4px; /* Adjust top margin as needed */
+}
+
+.social-icons a {
+{
+display: inline-block !important;
+float: left !important; 
+ font-size: 14px; /* Adjust the font size as needed */
+ margin-right: 8px; /* Adjust spacing between icons as needed */
+}
+
+
+.sidebar a {
+   background-image: linear-gradient(to right, #00b140, #bcda00 17%, #bcda00 60%, #00b140);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optionally make the text bold */
+    letter-spacing: 2px; /* Adjust letter spacing for a neon effect */
+    list-style: ordered-list;
+
+  padding: 30px;
+  flex: 0 0 200px;
+  position: relative;
+  margin-bottom:0 px;
+  heght:100%;
+	
+}
+.list-styled {
+  list-style-type: decimal; /* Uses decimal for numbered list */
+  padding-left: 0; /* Sets padding-left to 0 to move all list items to the left */
+  margin-top: 0; /* Resets the default margin on the ul element */}
+}
+
+.list-styled .header-text { 
+  margin-bottom: 5px; /* Adjusts margin as needed */	
+ background-image: linear-gradient(to right, #00b140, #bcda00 17%, #bcda00 60%, #00b140);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 2;	}
+.list-styled li:first-child {
+  margin-left: 0px; /* Adjusts the left margin for the first li item */}
+}	  
+
+ .container-fluid {
+  display: flex;
+  background-color: rgba(background: linear-gradient(45deg, #ff7e9b, #8ac2f8);
+  opacity: 0.5; );
+  margin: auto;
+  position: relative; 
+} 
+
+.navbar-nav .nav-link {
+  font-size: 12px; /* font size for the menu letters */
+}
+
+
+}
+.col-md-9 content p-4 {
+  flex:1;
+  overflow: auto;
+  padding: 20px; 
+  margin-top:20px;
+  height:100%;
+}
+ p {
+    margin: 10px 0; /*for better spacing */
+    color: rgba (22,34,345,0.8); /* text color */
+    font-size: 16px; 
+    text-align: center; /* Center-align the text */
+}
+
+@media (max-width: 575.98px) {
+  /* Styles for extra small devices (phones) */
+  .jumbotron {
+    max-width: 100%;
+    margin-right: 8px; /* Add a small margin to the right on smaller screens */
+  }
+
+  .jumbotron img {
+    max-height: 100%; /* Ensure the image does not overflow vertically */
+    max-width:100%;
+  }
+}
+   .jumbotron {
+      position: relative;
+      background: url('images/background.gif') center center;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px; /* Adjust padding as needed */
+      margin-bottom: 20px; /* Add some margin between jumbotron and other content */
+    }
+
+  .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%; /* Adjust as needed */
+  max-height: 80%; /* Adjust as needed */
+}
+
+.text-overlay h1,
+.text-overlay p {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  margin: 0; /* Remove default margins */
+  padding: 10px; /* Add padding to ensure text stays inside */
+}
+
+.card-text {
+  color: rgba(124, 134, 345, 0.8);
+  font-size: 16px;
+  max-height: 100px; /* Set the maximum height for the card text container */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the max height */
+  padding: 10px; /* Add padding to ensure text stays inside */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure the card takes up the full height */
+}
+
+
+/* Neon Glowing Effect */
+@keyframes neonGlow {
+  0% {
+    border-color: #ff00fb;
+    box-shadow: 0 0 15px #ff00fb, 0 0 30px #ff00fb, 0 0 45px #ff00fb;
+  }
+  50% {
+    border-color: #ff00fb;
+    box-shadow: 0 0 30px #ff00fb, 0 0 45px #ff00fb, 0 0 60px #ff00fb;
+  }
+  100% {
+    border-color: #ff00fb;
+    box-shadow: 0 0 15px #ff00fb, 0 0 30px #ff00fb, 0 0 45px #ff00fb;
+  }
+}
+
+/* H1 Border Styles */
+.card h1 {
+  border: 10px solid transparent;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+/* Apply neon glow animation */
+.card h1:hover {
+  animation: neonGlow 1.5s linear infinite;
+}
+
+.footer {
+  background-color: rgba(234, 23, 235, 0.8);
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
 /* Media query for small devices */
 @media screen and (max-width: 767px) {
   body {
